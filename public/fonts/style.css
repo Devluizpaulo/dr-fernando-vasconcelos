@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Canto Brush';
+    src: local('Canto Brush Roman'), local('Canto-Brush-Roman'),
+        url('CantoBrush-Roman.woff2') format('woff2'),
+        url('CantoBrush-Roman.woff') format('woff'),
+        url('CantoBrush-Roman.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
