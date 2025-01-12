@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Header = () => {
   return (
     <header className="bg-white py-6 shadow-xl">
-      <div className="max-w-9xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center">
+      <div className="max-w-full mx-auto px-6 flex flex-col sm:flex-row justify-between items-center">
         {/* Contêiner do logo e texto */}
         <div className="flex flex-col sm:flex-row items-center space-x-6 p-3 bg-white rounded-xl shadow-xl backdrop-blur-md">
           {/* Logo */}
@@ -13,7 +13,7 @@ const Header = () => {
             alt="Logo"
             width={140} // Tamanho fixo do logo
             height={140} // Tamanho fixo do logo
-            className="rounded-full w-32 h-32 sm:w-24 sm:h-34 md:w-30 md:h-30" // Responsividade no tamanho do logo
+            className="rounded-full w-36 h-32 sm:w-24 sm:h-34 md:w-30 md:h-30" // Responsividade no tamanho do logo
           />
           {/* Título e subtítulo */}
           <div className="text-blue-950" style={{ fontFamily: 'Canto Brush' }}>
