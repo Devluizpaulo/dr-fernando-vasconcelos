@@ -223,30 +223,31 @@ const Home: FC = () => {
       </section>
 
       <section id="testimonials" className="py-16 px-4 bg-blue-50">
-        <h3 className="text-4xl text-center mb-8 font-semibold text-blue-800">
-          Avaliações de nossos Clientes
-        </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4">
-          <div className="bg-white p-8 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
-            <p className="text-lg mb-4">
-              "O Dr. Fernando me ajudou muito. Profissional e super dedicado durante todo o processo e sempre me dando retorno."
-            </p>
-            <p className="font-semibold text-right">- João da Silva</p>
-          </div>
-          <div className="bg-white p-8 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
-            <p className="text-lg mb-4">
-              "Atendimento excelente! Ele explicou tudo direitinho. Recomendo"
-            </p>
-            <p className="font-semibold text-right">- Carlos Souza</p>
-          </div>
-          <div className="bg-white p-8 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
-            <p className="text-lg mb-4">
-              "Profissional top, sempre disponível e super detalhista. Super recomendo o Dr. Fernando pra quem precisa de um excelente advogado."
-            </p>
-            <p className="font-semibold text-right">- Maria Oliveira</p>
-          </div>
-        </div>
-      </section>
+  <h3 className="text-5xl text-center mb-8 font-semibold text-blue-800">
+    Avaliações de nossos Clientes
+  </h3>
+  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
+    <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
+      <p className="text-xl mb-6 leading-relaxed">
+        "O Dr. Fernando me ajudou muito. Profissional e super dedicado durante todo o processo e sempre me dando retorno."
+      </p>
+      <p className="font-semibold text-right text-lg text-blue-800">- João da Silva</p>
+    </div>
+    <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
+      <p className="text-xl mb-6 leading-relaxed">
+        "Atendimento excelente! Ele explicou tudo direitinho. Recomendo"
+      </p>
+      <p className="font-semibold text-right text-lg text-blue-800">- Carlos Souza</p>
+    </div>
+    <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
+      <p className="text-xl mb-6 leading-relaxed">
+        "Profissional top, sempre disponível e super detalhista. Super recomendo o Dr. Fernando pra quem precisa de um excelente advogado."
+      </p>
+      <p className="font-semibold text-right text-lg text-blue-800">- Maria Oliveira</p>
+    </div>
+  </div>
+</section>
+
 
       <section id="Contato" className="py-16 px-4 bg-white">
         <ContactForm />
