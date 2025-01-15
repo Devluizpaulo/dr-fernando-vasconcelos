@@ -41,7 +41,7 @@ const Home: FC = () => {
           </a>
         </div>
 
-        <div className="absolute bg-white opacity-85 rounded-md p-3 shadow-lg top-4 right-4 z-40">
+        <div className="absolute bg-white opacity-90 rounded-md p-3 shadow-lg top-4 right-4 z-40">
           <Image
             src="/VASCONCELLOS.png" // Verifique o caminho do arquivo
             alt="Logo"
