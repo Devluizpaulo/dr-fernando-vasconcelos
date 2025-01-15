@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Dr. Fernando Vasconcelos",
+  title: "Dr. Fernando Vasconcellos",
   description: "Consultoria jurídica especializada nas áreas de Direito Trabalhista, Tributário, Cível e muito mais. Protegendo os seus direitos com ética, transparência e dedicação.",
 };
 
