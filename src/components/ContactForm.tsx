@@ -13,7 +13,7 @@ const ContactForm = () => {
       {/* Container dos cards */}
       <div className="flex flex-wrap justify-center gap-12">
         {/* Card WhatsApp */}
-        <div className="w-[400px] p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
+        <div className="w-[350px] p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
           <div className="text-center">
             <FaWhatsapp className="w-16 h-16 mx-auto text-green-500" />
             <h4 className="text-2xl font-semibold text-green-800 mt-4">Atendimento pelo WhatsApp</h4>
@@ -33,7 +33,7 @@ const ContactForm = () => {
         </div>
 
         {/* Card Formulário de E-mail */}
-        <div className="w-[400px] p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
+        <div className="w-[350px] p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
           <div className="text-center">
             <FaEnvelope className="w-16 h-16 mx-auto text-blue-500" />
             <h4 className="text-2xl font-semibold text-blue-800 mt-4">Envie uma Mensagem</h4>
@@ -100,7 +100,7 @@ const ContactForm = () => {
             </form>
           </div>
         </div>
-        <div className="w-[400px] p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
+        <div className="w-[350px] p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
           <div className="text-center">
             <FaMapMarkerAlt className="w-16 h-16 mx-auto text-red-500" />
             <h4 className="text-2xl font-semibold text-red-800 mt-4">Nosso Endereço</h4>
