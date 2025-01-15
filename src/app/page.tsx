@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import { FaClipboardList, FaHandshake, FaBullhorn, FaClock, FaBuilding, FaExclamationTriangle, FaWhatsapp, FaBriefcase } from 'react-icons/fa';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Card from '@/components/Card';
 import ContactForm from '@/components/ContactForm';
@@ -9,8 +8,6 @@ import Image from 'next/image';
 const Home: FC = () => {
   return (
     <div>
-      <Header />
-
       <section
         id="Home"
         className="relative text-white text-center py-10 bg-gradient-to-b from-blue-900 to-blue-600 h-[70vh] flex flex-col justify-center items-center"
@@ -44,16 +41,15 @@ const Home: FC = () => {
           </a>
         </div>
 
-        <div className="absolute bg-white opacity-80 rounded-md p-2 shadow-lg top-2 right-4 z-40 sm:hidden">
+        <div className="absolute bg-white opacity-85 rounded-md p-3 shadow-lg top-4 right-4 z-40">
           <Image
-            src="/VASCONCELLOS.png" // Verifique o caminho e nome
+            src="/VASCONCELLOS.png" // Verifique o caminho do arquivo
             alt="Logo"
-            width={120} // Aumente se necessário
-            height={140}
-            className="" // Ajuste se precisar de um formato diferente
+            width={200} // Tamanho base da imagem
+            height={200}
+            className="w-36 sm:w-36 lg:w-56 object-contain" // Adiciona responsividade e mantém as proporções
           />
         </div>
-
 
       </section>
 
@@ -205,8 +201,8 @@ const Home: FC = () => {
             <Image
               src="/adv.png"
               alt="Dr. Fernando Vasconcellos"
-              width={100}
-              height={100}
+              width={150}
+              height={150}
               className="w-full h-auto rounded-2xl"
             />
           </div>

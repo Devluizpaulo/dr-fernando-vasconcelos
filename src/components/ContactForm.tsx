@@ -75,7 +75,7 @@ const ContactForm = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  placeholder="Ex.: [Seu Nome] site"
+                  placeholder="Digite o Assunto"
                   className="w-full p-3 border rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
                   required
                 />
@@ -100,8 +100,6 @@ const ContactForm = () => {
             </form>
           </div>
         </div>
-
-        {/* Card Endereço */}
         <div className="w-[400px] p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
           <div className="text-center">
             <FaMapMarkerAlt className="w-16 h-16 mx-auto text-red-500" />
@@ -109,16 +107,19 @@ const ContactForm = () => {
             <p className="text-gray-700 mt-4">
               Venha nos visitar em nosso escritório. Estamos localizados em um ambiente acolhedor e de fácil acesso:
             </p>
-            <p className="text-gray-800 font-semibold mt-2">Av. Sete de Setembro, 414<br />Diadema - SP</p>
+            <p className="text-gray-800 font-semibold mt-2">
+              R. Orense, 41, sala 304<br />
+              Centro, Diadema - SP, 09920-650
+            </p>
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Av.+Sete+de+Setembro,+414,+Diadema"
+              href="https://www.google.com/maps/search/?api=1&query=R.+Orense,+41,+sala+304,+Diadema,+SP,+09920-650"
               target="_blank"
               className="mt-6 inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 duration-300"
             >
-              Ver no Google Maps
+              Faça uma visita
             </a>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.509682902484!2d-46.6187524!3d-23.6465651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b6ad7f791ad%3A0x265bbc6d6e376c7f!2sAv.+Sete+de+Setembro%2C+414+-+Diadema%2C+SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.509682902484!2d-46.6187524!3d-23.6465651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b6ad7f791ad%3A0x265bbc6d6e376c7f!2sR.+Orense,+41,+sala+304,+Diadema,+SP,+09920-650!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
               width="100%"
               height="150"
               allowFullScreen
@@ -127,6 +128,7 @@ const ContactForm = () => {
             ></iframe>
           </div>
         </div>
+
       </div>
     </section>
   );
