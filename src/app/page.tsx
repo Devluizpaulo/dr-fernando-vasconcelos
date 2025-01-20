@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FaClipboardList, FaHandshake, FaBullhorn, FaClock, FaBuilding, FaExclamationTriangle, FaWhatsapp, FaBriefcase } from 'react-icons/fa';
+import { FaClipboardList, FaHandshake, FaBullhorn, FaClock, FaBuilding, FaExclamationTriangle, FaWhatsapp, FaBriefcase,FaWhatsapp  } from 'react-icons/fa';
 import Footer from '@/components/Footer';
 import Card from '@/components/Card';
 import ContactForm from '@/components/ContactForm';
@@ -52,10 +52,15 @@ const Home: FC = () => {
         </div>
         
          {/* Número de telefone na lateral direita */}
-         <div className="absolute top-1/2 right-4 transform -translate-y-1/2 z-50 bg-white bg-opacity-90 text-blue-600 text-lg sm:text-xl font-bold py-2 px-4 rounded-lg shadow-lg">
-          📞 <a href="tel:+5511994825120" className="underline hover:text-blue-800">11 99482-5120</a>
-        </div>
-       
+         {/* Ícone do WhatsApp */}
+        <a
+          href="https://wa.me/5511994825120" // Link direto para o WhatsApp
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-4 right-4 z-50 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300"
+        >
+          <FaWhatsapp className="text-white text-2xl" />
+        </a>
       </section>
 
       <section id="services" className="py-20 px-4 bg-gray-100">
