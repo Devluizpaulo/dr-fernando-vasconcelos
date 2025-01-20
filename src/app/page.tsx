@@ -50,7 +50,12 @@ const Home: FC = () => {
             className="w-36 sm:w-36 lg:w-56 object-contain" // Adiciona responsividade e mantém as proporções
           />
         </div>
-
+        
+         {/* Número de telefone na lateral direita */}
+         <div className="absolute top-1/2 right-4 transform -translate-y-1/2 z-50 bg-white bg-opacity-90 text-blue-600 text-lg sm:text-xl font-bold py-2 px-4 rounded-lg shadow-lg">
+          📞 <a href="tel:+5511994825120" className="underline hover:text-blue-800">11 99482-5120</a>
+        </div>
+       
       </section>
 
       <section id="services" className="py-20 px-4 bg-gray-100">
