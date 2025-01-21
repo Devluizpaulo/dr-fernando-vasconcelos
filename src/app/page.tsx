@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FaClipboardList, FaHandshake, FaBullhorn, FaClock, FaBuilding, FaExclamationTriangle, FaWhatsapp, FaBriefcase,FaWhatsapp  } from 'react-icons/fa';
+import { FaClipboardList, FaHandshake, FaBullhorn, FaClock, FaBuilding, FaExclamationTriangle, FaWhatsapp, FaBriefcase  } from 'react-icons/fa';
 import Footer from '@/components/Footer';
 import Card from '@/components/Card';
 import ContactForm from '@/components/ContactForm';
@@ -10,11 +10,11 @@ const Home: FC = () => {
     <div>
       <section
         id="Home"
-        className="relative text-white text-center py-10 bg-gradient-to-b from-blue-900 to-blue-600 h-[70vh] flex flex-col justify-center items-center"
+        className="relative text-white text-center py-10 bg-gradient-to-b from-blue-900 to-blue-600 min-h-[70vh] flex flex-col justify-center items-center"
       >
         {/* Imagem de fundo */}
         <div
-          className="absolute inset-0 bg-cover bg-center backdrop-blur-3xl transition-all duration-500"
+          className="absolute inset-0 bg-cover bg-center backdrop-blur-lg transition-all duration-500"
           style={{
             backgroundImage: "url(/hero-image.jpg)",
             backgroundSize: "cover",
@@ -25,39 +25,47 @@ const Home: FC = () => {
 
         {/* Conteúdo principal do hero */}
         <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-4xl sm:text-5xl font-semibold mb-6 animate__animated animate__fadeIn animate__delay-1s">
+          <h2 className="text-5xl sm:text-5xl font-semibold mb-6 animate__animated animate__fadeIn animate__delay-1s">
             Direito Trabalhista
           </h2>
-          <p className="text-lg sm:text-xl max-w-2xl mx-auto mb-8 animate__animated animate__fadeIn animate__delay-2s">
+          <p className="text-lg sm:text-4xl max-w-2xl mx-auto mb-8 animate__animated animate__fadeIn animate__delay-2s">
             Defendemos seus direitos com experiência e dedicação. Agende uma consulta e tire suas dúvidas.
           </p>
 
           {/* Botão de ação */}
           <a
             href="#Contato"
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-110 active:scale-95 duration-300"
+            className="text-3x1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-110 active:scale-95 duration-300"
           >
             Agende uma Consulta
           </a>
         </div>
 
-        <div className="absolute bg-white opacity-90 rounded-md p-3 shadow-lg top-4 right-4 z-40">
+        {/* Logotipo */}
+        <div className="absolute bg-white bg-opacity-90 rounded-md p-3 shadow-lg top-4 right-4 z-40">
           <Image
             src="/VASCONCELLOS.png" // Verifique o caminho do arquivo
             alt="Logo"
-            width={200} // Tamanho base da imagem
+            width={200} // Tamanho ajustado para maior equilíbrio
             height={200}
-            className="w-36 sm:w-36 lg:w-56 object-contain" // Adiciona responsividade e mantém as proporções
+            className="w-48 lg:w-48 object-contain" // Adiciona responsividade
           />
         </div>
+
         {/* Número de telefone na lateral direita */}
-        <div className="absolute top-1/2 right-4 transform -translate-y-1/2 z-50 bg-white bg-opacity-90 text-blue-600 text-lg sm:text-xl font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+        <div className="absolute top-full right-16 transform -translate-y-1/2 z-50 bg-white bg-opacity-90 text-blue-600 text-lg sm:right-16 sm:text-4x1 font-bold py-4 px-10 rounded-md shadow-lg flex items-center justify-center space-x-4">
           {/* Ícone do WhatsApp */}
-          <FaWhatsapp className="text-green-500 text-2xl" />
+          <FaWhatsapp className="text-green-500 text-3xl" />
           {/* Número de telefone */}
-          📞 <a href="tel:+5511994825120" className="underline hover:text-blue-800">11 99482-5120</a>
+          <a
+            href="tel:+5511994825120"
+            className="hover:text-blue-800 text-3xl"
+          >
+            11 99482-5120
+          </a>
         </div>
-       </section>
+      </section>
+
 
       <section id="services" className="py-20 px-4 bg-gray-100">
         <h3 className="text-4xl text-center mb-12 font-semibold text-blue-800">
