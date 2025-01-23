@@ -34,8 +34,8 @@ const Home: FC = () => {
 
           {/* Botão de ação */}
           <a
-            href="#Contato"
-            className="text-3x1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-110 active:scale-95 duration-300"
+            href="https://wa.me/5511994825120"
+            className="text-3x1 bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-110 active:scale-95 duration-300"
           >
             Agende uma Consulta
           </a>
