@@ -242,19 +242,19 @@ const Home: FC = () => {
   </h3>
   <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
     <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
-      <p className="text-xl mb-6 leading-relaxed">
+      <p className="text-xl text-black mb-6 leading-relaxed">
         "O Dr. Fernando me ajudou muito. Profissional e super dedicado durante todo o processo e sempre me dando retorno."
       </p>
       <p className="font-semibold text-right text-lg text-blue-800">- João da Silva</p>
     </div>
     <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
-      <p className="text-xl mb-6 leading-relaxed">
+      <p className="text-xl text-black mb-6 leading-relaxed">
         "Atendimento excelente! Ele explicou tudo direitinho. Recomendo"
       </p>
       <p className="font-semibold text-right text-lg text-blue-800">- Carlos Souza</p>
     </div>
     <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
-      <p className="text-xl mb-6 leading-relaxed">
+      <p className="text-xl text-black mb-6 leading-relaxed">
         "Profissional top, sempre disponível e super detalhista. Super recomendo o Dr. Fernando pra quem precisa de um excelente advogado."
       </p>
       <p className="font-semibold text-right text-lg text-blue-800">- Maria Oliveira</p>
