@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FaClipboardList, FaHandshake, FaBullhorn, FaClock, FaBuilding, FaExclamationTriangle, FaWhatsapp, FaBriefcase  } from 'react-icons/fa';
+import { FaClipboardList, FaHandshake, FaBullhorn, FaClock, FaBuilding, FaExclamationTriangle, FaWhatsapp, FaBriefcase } from 'react-icons/fa';
 import Footer from '@/components/Footer';
 import Card from '@/components/Card';
 import ContactForm from '@/components/ContactForm';
@@ -105,7 +105,7 @@ const Home: FC = () => {
             imageAlt="Horas Extras"
           />
           <Card
-            title="FGTS"
+            title="AUSÊNCIA DE DEPÓSITO DO FGTS"
             description="O Fundo de Garantia por Tempo de Serviço (FGTS) é um direito do trabalhador, e não recebê-lo corretamente pode prejudicar seu futuro. Caso sua empresa não esteja realizando o recolhimento adequado, estamos prontos para lutar pela regularização dos seus depósitos e garantir que você não seja prejudicado."
             className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s"
             imageSrc="/fgts-logo-01.png"
@@ -133,7 +133,8 @@ const Home: FC = () => {
             {
               imageSrc: "/direito-penal.jpg",
               title: "Direito Penal",
-              description: "Seu aliado nos momentos mais desafiadores. Atuamos com ética e compromisso em sua defesa, garantindo proteção legal em processos criminais.",
+              description:
+                "Seu aliado em momentos desafiadores. Estaremos ao seu lado nas audiências de custódia, flagrante e andamentos processuais de alta complexidade, além de recursos criminais.\n\nAtuação em processos de roubo, furto, tráfico e lavagem de dinheiro, sempre com compromisso e ética para melhor atendê-los.",
               bgColor: "bg-blue-600",
               hoverBg: "hover:bg-blue-700",
               href: "https://wa.me/5511994825120",
@@ -141,7 +142,8 @@ const Home: FC = () => {
             {
               imageSrc: "/direito-tributario.jpg",
               title: "Direito Tributário",
-              description: "Reduza custos e elimine riscos fiscais. Nossa consultoria oferece soluções inteligentes para garantir compliance e maximizar sua economia.",
+              description:
+                "Reduza custos e elimine riscos fiscais. Nossa consultoria oferece soluções inteligentes para garantir compliance e maximizar sua economia.",
               bgColor: "bg-green-600",
               hoverBg: "hover:bg-green-700",
               href: "https://wa.me/5511994825120",
@@ -149,7 +151,8 @@ const Home: FC = () => {
             {
               imageSrc: "/direito-civil.jpg",
               title: "Direito Cível",
-              description: "De contratos a indenizações, resolvemos suas disputas com rapidez e eficiência, sempre priorizando os melhores resultados para você.",
+              description:
+                "De contratos a indenizações, resolvemos suas disputas com rapidez e eficiência, sempre priorizando os melhores resultados para você.",
               bgColor: "bg-purple-600",
               hoverBg: "hover:bg-purple-700",
               href: "https://wa.me/5511994825120",
@@ -157,7 +160,8 @@ const Home: FC = () => {
             {
               imageSrc: "/direito-familia.jpg",
               title: "Direito de Família",
-              description: "Cuidamos do que mais importa: sua família. Com sensibilidade e expertise, tratamos de questões como divórcios, guarda e pensão alimentícia.",
+              description:
+                "Cuidamos do que mais importa: sua família. Com sensibilidade e expertise, tratamos de questões como divórcios, guarda e pensão alimentícia.",
               bgColor: "bg-red-600",
               hoverBg: "hover:bg-red-700",
               href: "https://wa.me/5511994825120",
@@ -165,7 +169,8 @@ const Home: FC = () => {
             {
               imageSrc: "/direito-consumidor.jpg",
               title: "Direito do Consumidor",
-              description: "Você não está sozinho. Protegemos seus direitos contra práticas abusivas, cobranças indevidas e contratos irregulares.",
+              description:
+                "Você não está sozinho. Protegemos seus direitos contra negativação indevida no Serasa e SCPC, contratos irregulares e empréstimos fraudulentos não reconhecidos em seu benefício de aposentadoria.",
               bgColor: "bg-orange-600",
               hoverBg: "hover:bg-orange-700",
               href: "https://wa.me/5511994825120",
@@ -173,7 +178,8 @@ const Home: FC = () => {
             {
               imageSrc: "/direito-empresarial.jpg",
               title: "Direito Empresarial",
-              description: "Cresça com segurança. Nossa equipe garante a proteção jurídica da sua empresa, oferecendo suporte estratégico em todas as etapas do negócio.",
+              description:
+                "Cresça com segurança. Nossa equipe garante a proteção jurídica da sua empresa, oferecendo suporte estratégico em todas as etapas do negócio.",
               bgColor: "bg-teal-600",
               hoverBg: "hover:bg-teal-700",
               href: "https://wa.me/5511994825120",
@@ -192,7 +198,7 @@ const Home: FC = () => {
               </div>
               <div className="sm:w-2/3 sm:pl-6">
                 <h4 className="text-xl font-bold mb-4 text-gray-800">{area.title}</h4>
-                <p className="text-gray-600 mb-6">{area.description}</p>
+                <p className="text-gray-600 mb-6 whitespace-pre-line">{area.description}</p>
                 <a
                   href={area.href}
                   className={`inline-block py-2 px-6 rounded-lg text-white font-bold transition-colors ${area.bgColor} ${area.hoverBg}`}
@@ -203,6 +209,7 @@ const Home: FC = () => {
             </div>
           ))}
         </div>
+
       </section>
 
       <section id="Sobre" className="bg-white py-20">
@@ -237,30 +244,30 @@ const Home: FC = () => {
       </section>
 
       <section id="testimonials" className="py-16 px-4 bg-blue-50">
-  <h3 className="text-5xl text-center mb-8 font-semibold text-blue-800">
-    Avaliações de nossos Clientes
-  </h3>
-  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
-    <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
-      <p className="text-xl text-black mb-6 leading-relaxed">
-        "O Dr. Fernando me ajudou muito. Profissional e super dedicado durante todo o processo e sempre me dando retorno."
-      </p>
-      <p className="font-semibold text-right text-lg text-blue-800">- João da Silva</p>
-    </div>
-    <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
-      <p className="text-xl text-black mb-6 leading-relaxed">
-        "Atendimento excelente! Ele explicou tudo direitinho. Recomendo"
-      </p>
-      <p className="font-semibold text-right text-lg text-blue-800">- Carlos Souza</p>
-    </div>
-    <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
-      <p className="text-xl text-black mb-6 leading-relaxed">
-        "Profissional top, sempre disponível e super detalhista. Super recomendo o Dr. Fernando pra quem precisa de um excelente advogado."
-      </p>
-      <p className="font-semibold text-right text-lg text-blue-800">- Maria Oliveira</p>
-    </div>
-  </div>
-</section>
+        <h3 className="text-5xl text-center mb-8 font-semibold text-blue-800">
+          Avaliações de nossos Clientes
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
+          <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
+            <p className="text-xl text-black mb-6 leading-relaxed">
+              "O Dr. Fernando me ajudou muito. Profissional e super dedicado durante todo o processo e sempre me dando retorno."
+            </p>
+            <p className="font-semibold text-right text-lg text-blue-800">- João da Silva</p>
+          </div>
+          <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
+            <p className="text-xl text-black mb-6 leading-relaxed">
+              "Atendimento excelente! Ele explicou tudo direitinho. Recomendo"
+            </p>
+            <p className="font-semibold text-right text-lg text-blue-800">- Carlos Souza</p>
+          </div>
+          <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
+            <p className="text-xl text-black mb-6 leading-relaxed">
+              "Profissional top, sempre disponível e super detalhista. Super recomendo o Dr. Fernando pra quem precisa de um excelente advogado."
+            </p>
+            <p className="font-semibold text-right text-lg text-blue-800">- Maria Oliveira</p>
+          </div>
+        </div>
+      </section>
 
 
       <section id="Contato" className="py-16 px-4 bg-white">
