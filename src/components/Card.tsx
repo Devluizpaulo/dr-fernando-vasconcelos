@@ -12,7 +12,6 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ title, description, imageSrc, imageAlt, className }) => {
-
   return (
     <div
       className={`bg-white p-2 md:p-4 rounded-lg shadow-lg max-w-sm sm:max-w-sm lg:max-w-xl mx-auto transition-transform hover:scale-105 ${className}`}
@@ -34,7 +33,7 @@ const Card: React.FC<CardProps> = ({ title, description, imageSrc, imageAlt, cla
         {/* Texto do card */}
         <div className="text-center sm:text-left">
           <h4 className="text-xl md:text-2xl font-semibold text-blue-800 mb-2">{title}</h4>
-          <p className="text-sm md:text-base text-gray-700">{description}</p>
+          <p className="text-sm md:text-base text-gray-700 text-justify">{description}</p> {/* Justificando o texto */}
         </div>
       </div>
 

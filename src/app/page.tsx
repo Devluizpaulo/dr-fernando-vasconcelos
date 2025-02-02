@@ -75,7 +75,7 @@ const Home: FC = () => {
           Temos expertise nas principais áreas do Direito Trabalhista, garantindo que seus direitos sejam preservados e que você tenha o melhor suporte para cada situação.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           <Card
             title="Trabalho Sem Registro"
             description="Se você trabalha sem o devido registro em carteira, seus direitos estão sendo negligenciados. Lutamos pelo reconhecimento do seu vínculo empregatício, assegurando o registro em carteira e garantindo que você tenha todos os direitos trabalhistas que merece. Não aceite menos que o que é seu por direito."
@@ -105,7 +105,7 @@ const Home: FC = () => {
             imageAlt="Horas Extras"
           />
           <Card
-            title="AUSÊNCIA DE DEPÓSITO DO FGTS"
+            title="Ausência de Depósito do FGTS"
             description="O Fundo de Garantia por Tempo de Serviço (FGTS) é um direito do trabalhador, e não recebê-lo corretamente pode prejudicar seu futuro. Caso sua empresa não esteja realizando o recolhimento adequado, estamos prontos para lutar pela regularização dos seus depósitos e garantir que você não seja prejudicado."
             className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s"
             imageSrc="/fgts-logo-01.png"
@@ -128,7 +128,7 @@ const Home: FC = () => {
           Mais do que especialistas em Direito Trabalhista, nossa equipe está pronta para oferecer suporte completo em diversas áreas. Veja como podemos ajudá-lo a resolver seus desafios jurídicos com eficiência e estratégia.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
           {[
             {
               imageSrc: "/direito-penal.jpg",
