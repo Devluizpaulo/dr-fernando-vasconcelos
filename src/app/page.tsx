@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FaClipboardList, FaHandshake, FaBullhorn, FaClock, FaBuilding, FaExclamationTriangle, FaWhatsapp, FaBriefcase } from 'react-icons/fa';
+import { FaClipboardList, FaHandshake, FaBullhorn, FaClock, FaBuilding, FaExclamationTriangle, FaWhatsapp, FaBriefcase, FaInstagram } from 'react-icons/fa';
 import Footer from '@/components/Footer';
 import Card from '@/components/Card';
 import ContactForm from '@/components/ContactForm';
@@ -40,16 +40,21 @@ const Home: FC = () => {
             Agende uma Consulta
           </a>
         </div>
-
-        {/* Logotipo */}
-        <div className="absolute bg-white bg-opacity-90 rounded-md p-3 shadow-lg top-4 right-4 z-40">
+        {/* Container para o logo e Instagram separados */}
+        <div className="absolute bg-white bg-opacity-90 rounded-md p-3 shadow-lg top-4 right-4 z-40 flex items-center space-x-4">
           <Image
-            src="/VASCONCELLOS.png" // Verifique o caminho do arquivo
+            src="/VASCONCELLOS.png"
             alt="Logo"
-            width={200} // Tamanho ajustado para maior equilíbrio
+            width={200}
             height={200}
-            className="w-48 lg:w-48 object-contain" // Adiciona responsividade
+            className="w-48 lg:w-48 object-contain"
           />
+        </div>
+
+        <div className="absolute bg-white bg-opacity-90 rounded-md p-1 shadow-lg top-4 left-4 z-40 flex items-center space-x-4">
+          <a href="https://www.instagram.com/adv.vasconcellos?igsh=OWs0czNuMXozeXBm" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-pink-600 text-5xl hover:text-pink-800 transition duration-300" />
+          </a>
         </div>
 
         {/* Número de telefone na lateral direita */}
