@@ -19,17 +19,20 @@ export const metadata: Metadata = {
     "Consultoria jurídica especializada nas áreas de Direito Trabalhista, Tributário, Cível e muito mais. Protegendo os seus direitos com ética, transparência e dedicação.",
   keywords:
     "advogado, consultoria jurídica, direito trabalhista, direito tributário, direito cível, defesa de direitos",
-  author: "Dr. Fernando Vasconcellos",
+  authors: [
+    {
+      name: "Dr. Fernando Vasconcellos",
+      url: "https://www.fvadvogados.com.br", // Adicionando o link para o site do autor
+    },
+  ],
   openGraph: {
     title: "Dr. Fernando Vasconcellos - Consultoria Jurídica",
     description:
       "Consultoria jurídica especializada nas áreas de Direito Trabalhista, Tributário, Cível e muito mais. Protegendo os seus direitos com ética, transparência e dedicação.",
-    images: "https://www.fvadvogados.com.br/VASCONCELLOS.png", // Caminho completo da imagem
+    images: "/VASCONCELLOS.png",
     url: "https://www.fvadvogados.com.br/",
-    alt: "Dr. Fernando Vasconcellos - Consultoria Jurídica", // Atributo alt para a imagem
   },
 };
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-br">
