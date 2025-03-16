@@ -10,129 +10,63 @@ const Home: FC = () => {
     <div>
       <section
         id="Home"
-        className="relative text-white text-center py-10 bg-gradient-to-b from-blue-900 to-blue-600 min-h-[70vh] flex flex-col justify-center items-center"
+        className="relative py-8 bg-gradient-to-r from-gray-50 via-white to-gray-100 min-h-[60vh] flex items-center 
+  shadow-[0px_4px_10px_rgba(0,0,0,0.1)] border border-gray-200 rounded-2xl"
       >
-        {/* Imagem de fundo */}
-        <div
-          className="absolute inset-0 bg-cover bg-center backdrop-blur-lg transition-all duration-500"
-          style={{
-            backgroundImage: "url(/hero-image.jpg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            filter: "brightness(0.5)",
-          }}
-        ></div>
+        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 lg:px-12 w-full gap-8">
 
-        {/* Conteúdo principal do hero */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-5xl sm:text-5xl font-semibold mb-6 animate__animated animate__fadeIn animate__delay-1s">
-            Direito Trabalhista
-          </h2>
-          <p className="text-lg sm:text-4xl max-w-2xl mx-auto mb-8 animate__animated animate__fadeIn animate__delay-2s">
-            Defendemos seus direitos com experiência e dedicação. Agende uma consulta e tire suas dúvidas.
-          </p>
+          {/* Logo à esquerda */}
+          <div className="lg:w-1/2 flex justify-center lg:justify-start mb-6 lg:mb-0">
+            <Image
+              src="/VASCONCELLOS.png"
+              alt="Logo Vasconcellos"
+              width={600}
+              height={600}
+              className="w-auto sm:w-96 lg:w-[500px] object-contain transition-all duration-500 ease-in-out transform hover:scale-110"
+            />
+          </div>
 
-          {/* Botão de ação */}
-          <a
-            href="https://wa.me/5511994825120"
-            className="text-3x1 bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-110 active:scale-95 duration-300"
-          >
-            Agende uma Consulta
-          </a>
-        </div>
-        {/* Container para o logo e Instagram separados */}
-        <div className="absolute bg-white bg-opacity-90 rounded-md p-3 shadow-lg top-4 right-4 z-40 flex items-center space-x-4">
-          <Image
-            src="/VASCONCELLOS.png"
-            alt="Logo"
-            width={200}
-            height={200}
-            className="w-48 lg:w-48 object-contain"
-          />
-        </div>
+          {/* Texto à direita */}
+          <div className="lg:w-1/3 text-center lg:text-left">
+            <h2 className="text-3xl sm:text-3xl font-semibold text-blue-700 mb-4 text-justify leading-tight">
+              Soluções Jurídicas para Você
+            </h2>
+            <p className="text-base sm:text-base text-gray-700 leading-relaxed mb-6 text-justify">
+              Com expertise em diversas áreas do direito, oferecemos a você o suporte necessário para resolver suas questões jurídicas com eficiência e compromisso.
+            </p>
 
-        <div className="absolute bg-white bg-opacity-90 rounded-md p-1 shadow-lg top-4 left-4 z-40 flex items-center space-x-4">
-          <a href="https://www.instagram.com/adv.vasconcellos?igsh=OWs0czNuMXozeXBm" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="text-pink-600 text-5xl hover:text-pink-800 transition duration-300" />
-          </a>
+            {/* Botão de ação */}
+            <div className="flex justify-center lg:justify-start">
+              <a
+                href="https://wa.me/5511994825120"
+                className="inline-flex items-center bg-white text-green-600 border-2 border-green-500 text-lg sm:text-xl font-semibold py-3 px-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 transform focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+              >
+                <FaWhatsapp className="text-2xl sm:text-3xl mr-3" />
+                <div className="flex flex-col text-left">
+                  <span className="text-base sm:text-lg">Agende uma Consulta</span>
+                  <span className="text-lg sm:text-xl font-bold text-green-700">11 99482-5120</span>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
-        {/* Número de telefone na lateral direita */}
-        <div className="absolute top-full right-16 transform -translate-y-1/2 z-50 bg-white bg-opacity-90 text-blue-600 text-lg sm:right-16 sm:text-4x1 font-bold py-4 px-10 rounded-md shadow-lg flex items-center justify-center space-x-4">
-          {/* Ícone do WhatsApp */}
-          <FaWhatsapp className="text-green-500 text-3xl" />
-          {/* Número de telefone */}
-          <a
-            href="tel:+5511994825120"
-            className="hover:text-blue-800 text-3xl"
-          >
-            11 99482-5120
+        {/* Ícone do Instagram no canto superior esquerdo */}
+        <div className="absolute top-3 left-4 z-40">
+          <a href="https://www.instagram.com/adv.vasconcellos" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-pink-600 text-3xl sm:text-3xl lg:text-4xl hover:text-pink-800 transition-transform duration-300 transform hover:scale-110" />
           </a>
         </div>
       </section>
 
 
-      <section id="services" className="py-20 px-4 bg-gray-100">
-        <h3 className="text-4xl text-center mb-12 font-semibold text-blue-800">
-          Nossas Especialidades
-        </h3>
-        <p className="text-lg sm:text-xl text-center mb-12 text-gray-600">
-          Temos expertise nas principais áreas do Direito Trabalhista, garantindo que seus direitos sejam preservados e que você tenha o melhor suporte para cada situação.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-          <Card
-            title="Trabalho Sem Registro"
-            description="Se você trabalha sem o devido registro em carteira, seus direitos estão sendo negligenciados. Lutamos pelo reconhecimento do seu vínculo empregatício, assegurando o registro em carteira e garantindo que você tenha todos os direitos trabalhistas que merece. Não aceite menos que o que é seu por direito."
-            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s"
-            imageSrc="/ctps.png"
-            imageAlt="Trabalho Sem Registro"
-          />
-          <Card
-            title="Rescisão Indireta"
-            description="Se o ambiente de trabalho se tornou insustentável e você está sendo tratado de forma abusiva, saiba que a rescisão indireta é uma solução legal que permite que você se desligue da empresa sem perder seus direitos. Não abra mão dos seus benefícios — a rescisão indireta garante que você saia da sua função com dignidade e respeito."
-            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s"
-            imageSrc="/resc.jpg"
-            imageAlt="Recisão Indireta"
-          />
-          <Card
-            title="Assédio Moral"
-            description="O assédio moral no ambiente de trabalho é uma violação grave dos seus direitos. Se você está sendo vítima de atitudes abusivas, nossa missão é ajudá-lo a buscar a reparação que você merece. Através de um processo adequado, buscamos uma indenização justa e a responsabilização dos envolvidos"
-            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s"
-            imageSrc="/AssédioMoral.png"
-            imageAlt="Assédio Moral"
-          />
-          <Card
-            title="Horas Extras"
-            description="Se você tem trabalhado além do horário regular e não está sendo remunerado corretamente pelas horas extras, é hora de garantir que seus direitos sejam respeitados. Atuamos para que você receba o pagamento justo por todo o tempo trabalhado, conforme a legislação trabalhista vigente."
-            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s"
-            imageSrc="/HorasExtras.png"
-            imageAlt="Horas Extras"
-          />
-          <Card
-            title="Ausência de Depósito do FGTS"
-            description="O Fundo de Garantia por Tempo de Serviço (FGTS) é um direito do trabalhador, e não recebê-lo corretamente pode prejudicar seu futuro. Caso sua empresa não esteja realizando o recolhimento adequado, estamos prontos para lutar pela regularização dos seus depósitos e garantir que você não seja prejudicado."
-            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s"
-            imageSrc="/fgts-logo-01.png"
-            imageAlt="FGTS"
-          />
-          <Card
-            title="Acidente de Trabalho"
-            description="Sofreu um acidente durante o trabalho? A indenização que você tem direito pode cobrir não apenas os danos imediatos, mas também custos de tratamentos prolongados, e em casos mais graves, pensões vitalícias. Nós estamos aqui para ajudar você a garantir uma compensação justa, proporcionando a segurança e apoio que você merece após um incidente dessa natureza."
-            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s"
-            imageSrc="/cat.jpg"
-            imageAlt="Acidente de Trabalho"
-          />
-        </div>
-      </section>
       <section id="OutrasAreas" className="py-20 px-6 bg-gray-100">
-        <h3 className="text-4xl text-center mb-12 font-bold text-blue-800">
-          Soluções Jurídicas Personalizadas
+        <h3 className="text-4xl text-center mb-12 font-semibold text-blue-800">
+          Áreas de Atuação
         </h3>
         <p className="text-lg sm:text-xl text-center mb-12 text-gray-600">
-          Mais do que especialistas em Direito Trabalhista, nossa equipe está pronta para oferecer suporte completo em diversas áreas. Veja como podemos ajudá-lo a resolver seus desafios jurídicos com eficiência e estratégia.
+          Com ampla experiência nas principais áreas do Direito, oferecemos um suporte jurídico completo, assegurando a proteção dos seus direitos e a melhor solução para cada necessidade.
         </p>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
           {[
             {
@@ -217,59 +151,206 @@ const Home: FC = () => {
 
       </section>
 
-      <section id="Sobre" className="bg-white py-20">
-        <h3 className="text-4xl text-center mb-12 font-semibold text-blue-800">
-          Dr. Fernando Vasconcellos
+      <section id="services" className="py-24 px-6 bg-gray-100">
+        <h3 className="text-3xl font-semibold text-blue-800 text-center mb-6">
+          Protegendo seus direitos, garantindo seu futuro
         </h3>
-        <div className="flex flex-col lg:flex-row items-center justify-center max-w-9xl mx-auto px-8">
-          {/* Seção de Imagem */}
-          <div className="p-2 rounded-xl shadow-lg mb-8 lg:mb-0">
-            <Image
-              src="/adv.png"
-              alt="Dr. Fernando Vasconcellos"
-              width={150}
-              height={150}
-              className="w-full h-auto rounded-2xl"
-            />
-          </div>
-          <div className="lg:w-2/3 text-justify lg:text-left px-8">
-            <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed">
-              Nosso escritório foi fundado com o objetivo de fornecer um atendimento jurídico personalizado e de excelência.
-              Com foco em ética, transparência e dedicação, nos destacamos na área de Direito Trabalhista, lidando com as mais
-              diversas situações e conquistando uma sólida reputação entre nossos clientes.
+        <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-12 text-justify">
+          No mundo do trabalho, cada detalhe faz a diferença. Se você enfrenta problemas como
+          <strong> trabalho sem registro, assédio moral, falta de pagamento de horas extras ou FGTS</strong>,
+          saiba que a lei está ao seu lado — e nós também.
+        </p>
+        <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-12 text-justify">
+          Atuamos com <strong>compromisso e dedicação</strong> para assegurar que seus direitos sejam respeitados
+          e que você receba tudo o que lhe é devido. Seja para corrigir uma irregularidade ou buscar uma indenização justa,
+          estamos aqui para <strong>orientar, representar e lutar por você</strong>.
+        </p>
+        <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-12 text-center">
+          Confira abaixo nossas principais áreas de atuação e descubra como podemos ajudar.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+          <Card
+            title="Trabalho Sem Registro"
+            description="Se você trabalha sem o devido registro em carteira, seus direitos estão sendo negligenciados. Lutamos pelo reconhecimento do seu vínculo empregatício, assegurando o registro em carteira e garantindo que você tenha todos os direitos trabalhistas que merece. Não aceite menos que o que é seu por direito."
+            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s text-justify"
+            imageSrc="/ctps.png"
+            imageAlt="Trabalho Sem Registro"
+          />
+          <Card
+            title="Rescisão Indireta"
+            description="Se o ambiente de trabalho se tornou insustentável e você está sendo tratado de forma abusiva, saiba que a rescisão indireta é uma solução legal que permite que você se desligue da empresa sem perder seus direitos. Não abra mão dos seus benefícios — a rescisão indireta garante que você saia da sua função com dignidade e respeito."
+            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s text-justify"
+            imageSrc="/resc.jpg"
+            imageAlt="Rescisão Indireta"
+          />
+          <Card
+            title="Assédio Moral"
+            description="O assédio moral no ambiente de trabalho é uma violação grave dos seus direitos. Se você está sendo vítima de atitudes abusivas, nossa missão é ajudá-lo a buscar a reparação que você merece. Através de um processo adequado, buscamos uma indenização justa e a responsabilização dos envolvidos."
+            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s text-justify"
+            imageSrc="/AssédioMoral.png"
+            imageAlt="Assédio Moral"
+          />
+          <Card
+            title="Horas Extras"
+            description="Se você tem trabalhado além do horário regular e não está sendo remunerado corretamente pelas horas extras, é hora de garantir que seus direitos sejam respeitados. Atuamos para que você receba o pagamento justo por todo o tempo trabalhado, conforme a legislação trabalhista vigente."
+            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s text-justify"
+            imageSrc="/HorasExtras.png"
+            imageAlt="Horas Extras"
+          />
+          <Card
+            title="Ausência de Depósito do FGTS"
+            description="O Fundo de Garantia por Tempo de Serviço (FGTS) é um direito do trabalhador, e não recebê-lo corretamente pode prejudicar seu futuro. Caso sua empresa não esteja realizando o recolhimento adequado, estamos prontos para lutar pela regularização dos seus depósitos e garantir que você não seja prejudicado."
+            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s text-justify"
+            imageSrc="/fgts-logo-01.png"
+            imageAlt="FGTS"
+          />
+          <Card
+            title="Acidente de Trabalho"
+            description="Sofreu um acidente durante o trabalho? A indenização que você tem direito pode cobrir não apenas os danos imediatos, mas também custos de tratamentos prolongados, e em casos mais graves, pensões vitalícias. Nós estamos aqui para ajudar você a garantir uma compensação justa, proporcionando a segurança e apoio que você merece após um incidente dessa natureza."
+            className="transition-all transform hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s text-justify"
+            imageSrc="/cat.jpg"
+            imageAlt="Acidente de Trabalho"
+          />
+        </div>
+      </section>
+      <section id="Sobre" className="bg-white py-24">
+        <h3 className="text-4xl text-center mb-12 font-semibold text-blue-800">
+          Sobre Nós
+        </h3>
+
+        {/* Seção de Advogados - Descrição Geral */}
+        <div className="flex flex-col lg:flex-row items-center justify-center max-w-7xl mx-auto px-6 space-y-8 lg:space-y-0 lg:space-x-12">
+          <div className="lg:w-full text-justify lg:text-left space-y-6">
+            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
+              Nosso time é composto por profissionais especializados nas áreas de{" "}
+              <strong>Direito Trabalhista</strong>, <strong>Direito Civil</strong>,{" "}
+              <strong>Direito Contratual</strong> e outras áreas essenciais. Cada
+              membro de nossa equipe traz uma experiência sólida e um compromisso
+              profundo em oferecer soluções jurídicas personalizadas para cada
+              cliente.
             </p>
-            <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
-              Nossa missão é garantir que os direitos de nossos clientes sejam protegidos com eficiência e assertividade.
-              Oferecemos soluções personalizadas, seja por meio de acordos ou ações judiciais, trabalhando sempre de forma estratégica
-              e próxima ao cliente. Nos comprometemos a dedicar atenção exclusiva a cada caso, com o objetivo de alcançar o melhor resultado
-              e garantir que a justiça seja feita de maneira plena e eficaz.
+            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
+              Trabalhamos com um objetivo comum: proporcionar um atendimento jurídico
+              de excelência, sempre com ética, transparência e dedicação,
+              independentemente da complexidade de cada caso.
             </p>
           </div>
         </div>
-      </section>
 
-      <section id="testimonials" className="py-16 px-4 bg-blue-50">
+        {/* Separador entre os advogados */}
+        <div className="border-t-2 border-gray-300 my-12"></div>
+
+        {/* Seção Dr. Fernando Vasconcellos */}
+        <div className="flex flex-col lg:flex-row items-center justify-center max-w-7xl mx-auto px-6 space-y-8 lg:space-y-0 lg:space-x-12">
+          <div className="p-4 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-500 ease-in-out">
+            <Image
+              src="/fernando.png"
+              alt="Dr. Fernando Vasconcellos"
+              width={130}
+              height={130}
+              className="w-full h-auto rounded-2xl transform transition-transform duration-500 hover:scale-110"
+            />
+          </div>
+          <div className="lg:w-2/3 text-justify lg:text-left space-y-6">
+            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
+              O <strong>Dr. Fernando Vasconcellos</strong> é um dos pilares de nossa
+              equipe, com uma vasta experiência nas áreas de <strong>Direito
+                Trabalhista</strong> e <strong>Direito Empresarial</strong>. Seu
+              compromisso com a busca de soluções ágeis e eficazes é o que o torna
+              referência em nossa área. Ele se dedica a ouvir e entender as
+              necessidades dos seus clientes, oferecendo orientações precisas, seja
+              em processos judiciais ou na resolução de conflitos de forma amigável.
+            </p>
+            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
+              Com um olhar atento às mudanças legais e tendências do mercado, o Dr.
+              Fernando sempre busca as melhores alternativas para garantir a segurança
+              e os direitos de seus clientes.
+            </p>
+          </div>
+        </div>
+
+        {/* Separador entre os advogados */}
+        <div className="border-t-2 border-gray-300 my-12"></div>
+
+        {/* Seção Dra. Mariana Soares Silva */}
+        <div className="flex flex-col lg:flex-row items-center justify-center max-w-7xl mx-auto px-6 space-y-8 lg:space-y-0 lg:space-x-12">
+          <div className="p-4 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-500 ease-in-out">
+            <Image
+              src="/mariana.png"
+              alt="Mariana Soares Silva"
+              width={250}
+              height={200}
+              className="w-full h-auto rounded-2xl transform transition-transform duration-500 hover:scale-110"
+            />
+          </div>
+          <div className="lg:w-2/3 text-justify lg:text-left space-y-6">
+            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
+              A <strong>Dra. Mariana Soares Silva</strong> é especialista em{" "}
+              <strong>Direito Civil</strong> e <strong>Direito Contratual</strong>, com
+              uma abordagem voltada para a segurança jurídica e a proteção dos
+              interesses de seus clientes. Seu trabalho é pautado pela clareza e
+              atenção aos detalhes, garantindo que cada contrato esteja alinhado às
+              necessidades e aos objetivos de seus clientes.
+            </p>
+            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
+              Com uma sólida capacidade de negociação, a Dra. Mariana busca sempre
+              soluções justas e eficientes, promovendo acordos que assegurem a melhor
+              proteção jurídica possível. Ela acredita em um atendimento próximo e
+              personalizado, construindo relações de confiança com seus clientes.
+            </p>
+          </div>
+        </div>
+
+        {/* Descrição final - Compromisso do Escritório */}
+        <div className="flex flex-col items-center max-w-7xl mx-auto px-6 mt-12 space-y-6">
+          <p className="text-lg sm:text-xl text-justify text-gray-700 leading-relaxed">
+            Nossa missão é proporcionar um atendimento jurídico que se destaca pela
+            competência, empatia e compromisso com a justiça. Nossa equipe está sempre
+            pronta para oferecer soluções eficazes e personalizadas, com o foco em
+            garantir os melhores resultados para nossos clientes.
+          </p>
+        </div>
+      </section>
+      {/* Seção de Avaliações de Clientes */}
+      <section id="testimonials" className="py-16 px-4 bg-white">
         <h3 className="text-5xl text-center mb-8 font-semibold text-blue-800">
-          Avaliações de nossos Clientes
+          O que nossos clientes dizem
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
-          <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Avaliação do Dr. Fernando Vasconcellos */}
+          <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform transition-all hover:scale-105 hover:shadow-blue-500/50 duration-300">
             <p className="text-xl text-black mb-6 leading-relaxed">
-              "O Dr. Fernando me ajudou muito. Profissional e super dedicado durante todo o processo e sempre me dando retorno."
+              "O Dr. Fernando foi ótimo! Sempre disponível, respondeu todas as minhas dúvidas e me deixou tranquilo durante o processo. Super recomendo!"
             </p>
             <p className="font-semibold text-right text-lg text-blue-800">- João da Silva</p>
           </div>
-          <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
+          <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform transition-all hover:scale-105 hover:shadow-blue-500/50 duration-300">
             <p className="text-xl text-black mb-6 leading-relaxed">
-              "Atendimento excelente! Ele explicou tudo direitinho. Recomendo"
+              "A Dra. Mariana é excelente! Ela realmente se importa em entender a situação do cliente e me ajudou a resolver tudo de forma simples e objetiva. Fiquei bem tranquilo com o atendimento."
+            </p>
+            <p className="font-semibold text-right text-lg text-blue-800">- Larissa Pereira</p>
+          </div>
+          <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform transition-all hover:scale-105 hover:shadow-blue-500/50 duration-300">
+            <p className="text-xl text-black mb-6 leading-relaxed">
+              "Ele é muito atencioso e esclarece tudo direitinho. O processo foi mais tranquilo do que eu imaginava, graças a ele. Nota 10!"
             </p>
             <p className="font-semibold text-right text-lg text-blue-800">- Carlos Souza</p>
           </div>
-          <div className="bg-white p-10 rounded-lg shadow-lg max-w-xs mx-auto transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 duration-300">
+
+          {/* Avaliação da Dra. Mariana Soares Silva */}
+
+          <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform transition-all hover:scale-105 hover:shadow-blue-500/50 duration-300">
             <p className="text-xl text-black mb-6 leading-relaxed">
-              "Profissional top, sempre disponível e super detalhista. Super recomendo o Dr. Fernando pra quem precisa de um excelente advogado."
+              "Eu estava um pouco perdido com um contrato, mas a Dra. Mariana explicou tudo de forma clara e me ajudou a entender tudo. Ela é super profissional!"
             </p>
-            <p className="font-semibold text-right text-lg text-blue-800">- Maria Oliveira</p>
+            <p className="font-semibold text-right text-lg text-blue-800">- Roberto Almeida</p>
+          </div>
+          <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform transition-all hover:scale-105 hover:shadow-blue-500/50 duration-300">
+            <p className="text-xl text-black mb-6 leading-relaxed">
+              "Tive um problema com um contrato e a Dra. Mariana resolveu tudo com muita paciência e dedicação. Fiquei muito satisfeito com o trabalho dela!"
+            </p>
+            <p className="font-semibold text-right text-lg text-blue-800">- Ana Costa</p>
           </div>
         </div>
       </section>
