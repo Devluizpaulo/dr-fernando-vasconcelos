@@ -253,22 +253,22 @@ const Home: FC = () => {
             />
           </div>
           <div className="lg:w-2/3 text-justify lg:text-left space-y-6">
-            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
-              O <strong>Dr. Fernando Vasconcellos</strong> é um dos pilares de nossa
-              equipe, com uma vasta experiência nas áreas de <strong>Direito
-                Trabalhista</strong> e <strong>Direito Empresarial</strong>. Seu
-              compromisso com a busca de soluções ágeis e eficazes é o que o torna
-              referência em nossa área. Ele se dedica a ouvir e entender as
-              necessidades dos seus clientes, oferecendo orientações precisas, seja
-              em processos judiciais ou na resolução de conflitos de forma amigável.
+            <p className="text-lg sm:text-xl text-justify text-gray-700 leading-relaxed">
+              O <strong>Dr. Fernando Vasconcellos</strong> é especialista em{" "}
+              <strong>Direito Penal, Direito Penal Econômico e Direito Tributário</strong>.
+              Com uma atuação estratégica e comprometida, ele busca soluções eficientes para
+              proteger os interesses de seus clientes, seja na esfera empresarial ou na defesa
+              penal. Sua experiência permite um olhar analítico e preventivo, auxiliando tanto
+              na resolução de litígios quanto na mitigação de riscos legais.
             </p>
-            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
-              Com um olhar atento às mudanças legais e tendências do mercado, o Dr.
-              Fernando sempre busca as melhores alternativas para garantir a segurança
-              e os direitos de seus clientes.
+            <p className="text-lg sm:text-xl text-justify text-gray-700 leading-relaxed">
+              Atento às constantes mudanças na legislação e na jurisprudência, o Dr. Fernando
+              oferece assessoria especializada, garantindo a melhor orientação jurídica para
+              seus clientes.
             </p>
           </div>
         </div>
+
 
         {/* Separador entre os advogados */}
         <div className="border-t-2 border-gray-300 my-12"></div>
@@ -278,29 +278,29 @@ const Home: FC = () => {
           <div className="p-4 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-500 ease-in-out">
             <Image
               src="/mariana.png"
-              alt="Mariana Soares Silva"
+              alt="Dra. Mariana Soares Silva"
               width={250}
               height={200}
               className="w-full h-auto rounded-2xl transform transition-transform duration-500 hover:scale-110"
             />
           </div>
           <div className="lg:w-2/3 text-justify lg:text-left space-y-6">
-            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
-              A <strong>Dra. Mariana Soares Silva</strong> é especialista em{" "}
-              <strong>Direito Civil</strong> e <strong>Direito Contratual</strong>, com
-              uma abordagem voltada para a segurança jurídica e a proteção dos
-              interesses de seus clientes. Seu trabalho é pautado pela clareza e
-              atenção aos detalhes, garantindo que cada contrato esteja alinhado às
-              necessidades e aos objetivos de seus clientes.
+            <p className="text-lg sm:text-xl text-justify text-gray-700 leading-relaxed">
+              A <strong>Dra. Mariana Soares Silva</strong> possui ampla experiência em{" "}
+              <strong>Direito Civil, Direito do Consumidor e Direito Trabalhista</strong>. Seu
+              foco está na defesa dos direitos de seus clientes, tanto em questões contratuais
+              quanto em litígios de consumo e relações de trabalho. Com um olhar atento aos
+              detalhes, ela atua para garantir segurança jurídica e soluções eficazes.
             </p>
-            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
-              Com uma sólida capacidade de negociação, a Dra. Mariana busca sempre
-              soluções justas e eficientes, promovendo acordos que assegurem a melhor
-              proteção jurídica possível. Ela acredita em um atendimento próximo e
-              personalizado, construindo relações de confiança com seus clientes.
+            <p className="text-lg text-justify sm:text-xl text-gray-700 leading-relaxed">
+              Seu trabalho é pautado pela ética e transparência, sempre buscando estratégias
+              que promovam a melhor proteção e o melhor resultado possível para seus clientes.
+              Seja na resolução de conflitos ou na assessoria preventiva, a Dra. Mariana se
+              dedica a proporcionar um atendimento próximo e personalizado.
             </p>
           </div>
         </div>
+
 
         {/* Descrição final - Compromisso do Escritório */}
         <div className="flex flex-col items-center max-w-7xl mx-auto px-6 mt-12 space-y-6">
